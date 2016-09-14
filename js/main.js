@@ -83,6 +83,7 @@ function main(){
        if (img > 11){
             img = 0;
        }
+       var contenido = document.getElementById('contenedor');
        contenido.style.backgroundImage='url(Assets/fondo' + img.toString() + '.png)';
        img++;
    }, 9000);
