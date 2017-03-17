@@ -24,7 +24,7 @@ function menuLateral() {
     menu.style.float = 'left';
     var menu_a = document.querySelectorAll("nav a");
     for (i = 0; i < menu_a.length; i++) {
-        menu_a[i].style.fontSize = "50%";
+        menu_a[i].style.fontSize = "2vw";
         menu_a[i].style.display = "inline";
         menu_a[i].style.marginTop = "5%";
     }

@@ -2,11 +2,9 @@
   font-family: 'URW Chancery L';
   src: url(../Assets/URWChanceryL-MediItal.woff) format("woff");
 }
-
 body {
-  background-color: #777777;
+  background-color: #777;
 }
-
 body #contenedor {
   background-size: 100% 100%;
   background-image: url('../Assets/fondo0.png');
@@ -18,63 +16,54 @@ body #contenedor {
   -moz-box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.7);
   box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.7);
 }
-
 body #contenedor header {
   background: transparent;
   text-align: center;
   display: inline;
 }
-
 body #contenedor header h1 {
-  color: #ffffff;
-  text-shadow: 1px 1px 0px #000000;
+  color: #FFF;
+  text-shadow: 1px 1px 0px #000;
   margin-top: 3%;
   padding: 0;
-  font-size: 100%;
+  font-size: 3vw;
 }
-
 body #contenedor nav {
   text-align: center;
   width: 40%;
   margin: 5% 23%;
   padding: 1%;
-  font-family: 'URW Chancery L', Times, sans-serif;
-  font-weight: bold;
-  font-size: 350%;
-  display: inline;
   position: absolute;
 }
-
 body #contenedor nav a {
   text-decoration: none;
+  font-family: 'URW Chancery L', Times, sans-serif;
+  font-weight: bold;
+  font-size: 10vw;
   width: 100%;
   height: 100%;
   padding: 0;
   margin: 0;
   float: left;
-  display: inline;
-  color: #000000;
-  text-shadow: 1px 1px 0px #ffffff;
+  color: #000;
+  text-shadow: 1px 1px 0px #FFF;
 }
-
 body #contenedor nav a:hover {
   -webkit-transform: scale(1.1);
   -moz-transform: scale(1.1);
   -o-transform: scale(1.1);
   -ms-transform: scale(1.1);
   transform: scale(1.1);
-  color: #ffffff;
+  color: #FFF;
   -webkit-transition: all 0.5s ease-out;
   -moz-transition: all 0.5s ease-out;
   -o-transition: all 0.5s ease-out;
   transition: all 0.5s ease-out;
-  text-shadow: 1px 1px 0px #000000;
+  text-shadow: 1px 1px 0px #000;
 }
-
 body #contenedor nav a:focus {
   outline: 0px;
 }
-
 body #contenedor section {
   display: none;
   position: relative;
@@ -83,25 +72,20 @@ body #contenedor section {
   float: right;
   padding: 2%;
   overflow: auto;
-  border: solid 3px #ffffff;
+  border: solid 3px #FFF;
   background-color: rgba(255, 255, 255, 0.7);
-  -o-box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4) inset, 1px 1px 0px #dddddd, 2px 2px 0px #cccccc, 3px 3px 0px #bbbbbb, 4px 4px 0px #aaaaaa, 5px 5px 0px #999999, 6px 6px 2px #888888;
-  -moz-box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4) inset, 1px 1px 0px #dddddd, 2px 2px 0px #cccccc, 3px 3px 0px #bbbbbb, 4px 4px 0px #aaaaaa, 5px 5px 0px #999999, 6px 6px 2px #888888;
-  -webkit-box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4) inset, 1px 1px 0px #dddddd, 2px 2px 0px #cccccc, 3px 3px 0px #bbbbbb, 4px 4px 0px #aaaaaa, 5px 5px 0px #999999, 6px 6px 2px #888888;
-  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4) inset, 1px 1px 0px #dddddd, 2px 2px 0px #cccccc, 3px 3px 0px #bbbbbb, 4px 4px 0px #aaaaaa, 5px 5px 0px #999999, 6px 6px 2px #888888;
+  -o-box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4) inset, 1px 1px 0px #DDD, 2px 2px 0px #CCC, 3px 3px 0px #BBB, 4px 4px 0px #AAA, 5px 5px 0px #999, 6px 6px 2px #888;
+  -moz-box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4) inset, 1px 1px 0px #DDD, 2px 2px 0px #CCC, 3px 3px 0px #BBB, 4px 4px 0px #AAA, 5px 5px 0px #999, 6px 6px 2px #888;
+  -webkit-box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4) inset, 1px 1px 0px #DDD, 2px 2px 0px #CCC, 3px 3px 0px #BBB, 4px 4px 0px #AAA, 5px 5px 0px #999, 6px 6px 2px #888;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4) inset, 1px 1px 0px #DDD, 2px 2px 0px #CCC, 3px 3px 0px #BBB, 4px 4px 0px #AAA, 5px 5px 0px #999, 6px 6px 2px #888;
 }
-
 body #contenedor section article {
   height: 100%;
   width: 100%;
-}
-
-body #contenedor section article b {
-  font-size: 150%;
+  font-size: 3vw;
   text-align: justify;
   font-family: 'URW Chancery L', Times, sans-serif;
 }
-
 body #contenedor #logo {
   padding: 0;
   position: absolute;
@@ -109,7 +93,6 @@ body #contenedor #logo {
   width: 10%;
   height: 15%;
 }
-
 body #contenedor #logo img {
   width: 100%;
   height: 100%;
