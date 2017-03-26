@@ -1,12 +1,11 @@
-var isMenuLateral = false
-    , isSeccionVisible = false;
+var isMenuLateral = false,
+    isSeccionVisible = false;
 
 function Ajax(url, elemento) {
     var xmlhttp;
     if (window.XMLHttpRequest) { // code for IE7+, Firefox, Chrome, Opera, Safari
         xmlhttp = new XMLHttpRequest();
-    }
-    else { // code for IE6, IE5
+    } else { // code for IE6, IE5
         xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
     }
     xmlhttp.open("GET", url, false);
@@ -46,19 +45,19 @@ function seccionVisible() {
 };
 
 function ocultarArticulos() {
-    var tao = document.getElementById("taoteking")
-        , hua = document.getElementById("huahuching")
-        , wen = document.getElementById("wentzu");
+    var tao = document.getElementById("taoteking"),
+        hua = document.getElementById("huahuching"),
+        wen = document.getElementById("wentzu");
     tao.style.display = hua.style.display = wen.style.display = "none";
     tao.innerHTML = hua.innerHTML = wen.innerHTML = "";
 };
 
 function actualizar() {
-    var body = document.querySelector('body')
-        , contenido = document.getElementById('contenedor')
-        , width = window.innerWidth
-        , height = window.innerHeight;
-    // dimensiono body para que ocupe solo la ventana 
+    var body = document.querySelector('body'),
+        contenido = document.getElementById('contenedor'),
+        width = window.innerWidth,
+        height = window.innerHeight;
+    // dimensiono body para que ocupe solo la ventana
     body.style.width = width.toString() + 'px';
     body.style.height = height.toString() + 'px';
     // dimensiono contenido al 85%w y 90%h de body
@@ -70,14 +69,14 @@ function actualizar() {
 };
 
 function main() {
-    var link_tao = document.querySelector('a[href*="taoteking"]')
-        , link_hua = document.querySelector('a[href*="huahuching"]')
-        , link_wen = document.querySelector('a[href*="wentzu"]')
-        , img = 0;
+    var link_tao = document.querySelector('a[href*="taoteking"]'),
+        link_hua = document.querySelector('a[href*="huahuching"]'),
+        link_wen = document.querySelector('a[href*="wentzu"]'),
+        img = 0;
     ocultarArticulos();
     actualizar();
     // cambio el fondo  cada 9 segundo
-    setInterval(function () {
+    setInterval(function() {
         if (img > 11) {
             img = 0;
         }
@@ -87,7 +86,7 @@ function main() {
     }, 9000);
     window.onresize = actualizar;
     // muestro el texto del tao te king
-    link_tao.onclick = function () {
+    link_tao.onclick = function() {
         var articulo = document.getElementById('taoteking');
         menuLateral();
         seccionVisible();
@@ -97,7 +96,7 @@ function main() {
         actualizar();
     };
     // muestro el texto del hua hu ching
-    link_hua.onclick = function () {
+    link_hua.onclick = function() {
         var articulo = document.getElementById('huahuching');
         menuLateral();
         seccionVisible();
@@ -107,7 +106,7 @@ function main() {
         actualizar();
     };
     // muestro el texto de wen tzu
-    link_wen.onclick = function () {
+    link_wen.onclick = function() {
         var articulo = document.getElementById('wentzu');
         menuLateral();
         seccionVisible();
