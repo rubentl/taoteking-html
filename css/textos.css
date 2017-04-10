@@ -1,0 +1,99 @@
+/* css document */
+
+@font-face {
+    font-family: 'Monaco';
+    src: url("../Assets/Monaco_Linux-Powerline.ttf") format("ttf")
+}
+
+html, body{
+    width: 100vw;
+    height: 100vh;
+    padding: 0;
+    margin:0;
+    box-sizing:border-box;
+}
+
+body {
+    background-color: #7accef;
+    font-family: Monaco;
+    color:white;
+}
+
+header{
+  width: 60%;
+  position: fixed;
+  top:1px;
+  left: 20%;
+  z-index: 99;
+  background-color: #2ba6db;
+  -webkit-box-shadow: 0px 0px 0px 1px rgba(255,255,255,1);
+  -moz-box-shadow: 0px 0px 0px 1px rgba(255,255,255,1);
+  box-shadow: 0px 0px 0px 1px rgba(255,255,255,1);
+}
+
+nav{
+  display:flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+  align-items: stretch;
+}
+
+a{
+  flex: 1 1 auto;
+  text-decoration: none;
+  color: white;
+  padding: 10px 0;
+  display:block;
+  text-align: center;
+}
+
+a:hover{
+  background-color: #024968;
+}
+
+main{
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+    -webkit-box-shadow: 0px 0px 0px 2px rgba(2,73,104,1);
+    -moz-box-shadow: 0px 0px 0px 2px rgba(2,73,104,1);
+    box-shadow: 0px 0px 0px 2px rgba(2,73,104,1);
+    color: #024968;
+    margin: 45px auto;
+    position: relative;
+    text-align: justify;
+    width: 50%;
+}
+
+main h1{
+    color: #024968;
+    padding-top: 20px;
+    text-align: center;
+}
+
+
+main h2{
+    margin-left: 20px;
+}
+
+main p{
+    margin: 0 20px;
+}
+
+footer{
+    color: #024968;
+    text-align:center;
+    margin-bottom:20px;
+}
+
+@media (max-width: 600px){
+  header{
+    width: 100%;
+    left: 0;
+  }
+  main{
+    margin:45px 0;
+    width:100%;
+    border-radius: 0;
+    box-shadow: 0px 0px 0px 0px rgba(0,0,0,0);
+  }
+}
